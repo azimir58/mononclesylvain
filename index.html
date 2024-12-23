@@ -1,12 +1,208 @@
-<!--
-// index.html example
--->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Site V2</title>
+    <title>Welcome to My Awesome 90s Page!!!</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff0000, #00ff00);
+            font-family: "Comic Sans MS", cursive;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            cursor: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='), auto;
+        }
+        
+        .container {
+            background-color: #000000;
+            border: 5px solid #00ff00;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 0 20px #ff00ff;
+        }
+        
+        h1 {
+            color: #ffff00;
+            text-shadow: 2px 2px #ff0000, -2px -2px #00ff00;
+            animation: rainbow 2s infinite;
+            font-size: 3em;
+            transform: rotate(-2deg);
+        }
+        
+        .image-container {
+            border: 10px groove #ff00ff;
+            padding: 10px;
+            background-color: #ffffff;
+            margin: 20px auto;
+            max-width: 400px;
+            transform: rotate(1deg);
+            animation: wobble 5s infinite;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .marquee {
+            background: linear-gradient(90deg, #0000ff, #ff00ff);
+            color: #ffffff;
+            padding: 10px;
+            margin: 20px 0;
+            border: 3px dashed #ffff00;
+        }
+        
+        @keyframes rainbow {
+            0% { color: #ff0000; }
+            20% { color: #ffff00; }
+            40% { color: #00ff00; }
+            60% { color: #00ffff; }
+            80% { color: #ff00ff; }
+            100% { color: #ff0000; }
+        }
+        
+        @keyframes wobble {
+            0%, 100% { transform: rotate(1deg); }
+            50% { transform: rotate(-1deg); }
+        }
+        
+        .counter {
+            font-family: "Courier New", monospace;
+            background-color: #000000;
+            color: #00ff00;
+            display: inline-block;
+            padding: 5px 10px;
+            border: 3px outset #808080;
+            animation: blink 1s infinite;
+        }
+        
+        .flames {
+            color: #ff0000;
+            text-shadow: 0 0 5px #ff0000;
+            animation: flames 0.5s infinite;
+        }
+        
+        @keyframes flames {
+            0% { text-shadow: 0 0 5px #ff0000; }
+            50% { text-shadow: 0 0 15px #ff8800; }
+            100% { text-shadow: 0 0 5px #ff0000; }
+        }
+        
+        .star {
+            display: inline-block;
+            animation: spin 2s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .construction {
+            background: repeating-linear-gradient(
+                45deg,
+                #000000,
+                #000000 10px,
+                #ffff00 10px,
+                #ffff00 20px
+            );
+            padding: 5px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my website333333</h1>
+    <div class="container">
+        <div class="construction">
+            <span class="flames">🚧 UNDER HEAVY CONSTRUCTION 🚧</span>
+        </div>
+
+        <h1>!!¡¡ <span class="star">⭐</span> Coupe la corde orange!! <span class="star">⭐</span> !!¡¡</h1>
+        
+        <div class="marquee">
+            <marquee scrollamount="10" behavior="alternate">
+                <span style="color: #ff00ff;">★</span>
+                <span style="color: #ffff00;">☆</span>
+                WELCOME TO MY TOTALLY AWESOME WEBSITE! WARNING: MINDS WILL BE BLOWN!
+                <span style="color: #00ff00;">★</span>
+                <span style="color: #00ffff;">☆</span>
+            </marquee>
+        </div>
+
+        <div class="flames" style="font-size: 24px; margin: 20px;">
+            >>>>>> Il faut faire le labyrinthe!!! <<<<<<
+        </div>
+        
+        <div class="image-container">
+            <img src="test.jpg" alt="Your Radical Image Here">
+        </div>
+
+        <marquee direction="up" height="50" scrollamount="2">
+            <span style="color: #ff00ff;">~*~*~*~*~*~*~*~*~*~*~*~*~*~</span>
+        </marquee>
+
+        <div style="color: yellow; font-size: 24px; margin: 20px;">
+            <span class="star">📖</span> Coupe la corde orange!!! <span class="star">📖</span>
+            <br>
+        </div>
+
+
+        <div class="badge">Made for IE 4.0</div>
+
+        <div style="color: #00ffff; margin: 20px;">
+            <span class="flames">!!!!!!!! AWESOME LINKS !!!!!!!!!</span><br>
+            [<span style="color: #ff00ff;">matantesylvie.net</span>] 
+            [<span style="color: #00ff00;">pepereGerard.org</span>] 
+            [<span style="color: #ffff00;">titeloulou.io</span>]
+            <br>
+            [<span style="color: #ff8800;">w3c validator: 847 errors</span>]
+        </div>
+
+        <div style="border: 3px dashed #ff00ff; padding: 10px; margin: 20px;">
+            <span class="star">🔥</span> JOIN MY WEBRING! <span class="star">🔥</span>
+        </div>
+
+        <div style="color: #ff8800; margin: 20px;">
+            Made with Microsoft FrontPage 98 and LOVE!<br>
+            Copyright 1999 - This site is CERTIFIED Y2K READY!<br>
+            <span style="font-size: 10px;">Don't Steal My Code! My dad is a lawyer!</span>
+        </div>
+        
+        <div class="counter">
+            <span style="color: #ff0000;">YOU ARE VISITOR #</span>
+            <span style="color: #00ff00;">000001</span>
+        </div>
+
+        <marquee scrollamount="3">
+            <div style="color: #ff0000; font-size: 12px;">
+                This site is optimized for 800x600 resolution - Best viewed with Netscape Navigator 3.0 or higher!
+                NO RESPONSIBILITY FOR MELTED EYEBALLS! 👀
+            </div>
+        </marquee>
+
+        <div style="margin-top: 20px;">
+            <img src="/api/placeholder/88/31" alt="Best viewed with Netscape"><br>
+            <img src="/api/placeholder/88/31" alt="Get Internet Explorer"><br>
+            <img src="/api/placeholder/88/31" alt="Valid HTML 1.0!">
+        </div>
+    </div>
 </body>
 </html>
